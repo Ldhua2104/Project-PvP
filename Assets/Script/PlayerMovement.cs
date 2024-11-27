@@ -10,6 +10,9 @@ public class playermove : MonoBehaviour
     private  Rigidbody2D rb;
 
     Vector2 moveDirection;
+
+    public GameObject playerbullet;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,7 +21,11 @@ public class playermove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(playerbullet, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(0, 0, 0));
+
+        }
     }
     private void FixedUpdate()
     {
