@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 798317285
+    locked: 0
+  - name: Frame
+    uniqueID: 332174439
+    locked: 0
+  - name: Active
+    uniqueID: 1363447369
+    locked: 0
