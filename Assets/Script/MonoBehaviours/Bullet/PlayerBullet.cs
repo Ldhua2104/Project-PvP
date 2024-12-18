@@ -49,7 +49,7 @@ public class PlayerBullet : Bullet
     }
     protected override void DestroyBullet()
     {
-        ObjectPool.Instance.ReturnToPool(this.gameObject);
+        ObjectPool.Instance.ReturnToPool("PlayerBullet", this.gameObject);
         this.gameObject.SetActive(false);
         this.transform.SetParent(ObjectPool.Instance.transform);
         ResetDefault();
